@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction — YES For Hockey</title>
+  <meta name="description" content="This page is being crafted with care. Check back soon — YES For Hockey is building something great. Countdown to launch inside.">
+  <meta name="keywords" content="YES For Hockey under construction, hockey NGO India, coming soon">
+  <meta name="robots" content="noindex, follow">
+  <meta property="og:title" content="Under Construction — YES For Hockey">
+  <meta property="og:description" content="We're building something great. Check back soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.yesforhockey.in/logo-yfh.png">
+  <link rel="canonical" href="https://www.yesforhockey.in/under-construction.html">
+  <link rel="icon" href="logo-yfh.png" type="image/png">
+  <link rel="apple-touch-icon" href="logo-yfh.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animation.css">
+
+  <style>
+    /* Standalone under-construction hero — full screen, dark gradient */
+    .uc-hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+      background: linear-gradient(135deg, var(--text-dark), var(--dark-2));
+      overflow: hidden;
+    }
+    .uc-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(184, 214, 77, 0.22), transparent 50%),
+        radial-gradient(circle at 10% 90%, rgba(201, 213, 149, 0.18), transparent 50%);
+    }
+    .uc-hero .uc-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 640px;
+      width: 100%;
+    }
+    .uc-hero .uc-card-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(184, 214, 77, 0.18);
+      border-radius: var(--radius-xl);
+      padding: clamp(2rem, 6vw, 3.5rem);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow-lift);
+    }
+    .uc-hero .uc-card-box .top {
+      height: 6px;
+      background: var(--primary);
+      width: 80px;
+      margin: 0 auto 1.75rem;
+      border-radius: var(--radius-full);
+    }
+    .uc-hero h2 { color: var(--white); font-size: clamp(1.6rem, 4vw, 2.1rem); }
+    .uc-hero .uc-desc {
+      margin: 0.75rem auto 0;
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.75);
+      max-width: 440px;
+    }
+    /* Override countdown for dark theme */
+    .uc-hero .uc-countdown .uc-unit .uc-val {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(184, 214, 77, 0.25);
+      color: var(--primary);
+    }
+    .uc-hero .uc-countdown .uc-unit .uc-lab { color: rgba(255, 255, 255, 0.55); }
+    .uc-hero .uc-eyebrow { color: var(--accent); }
+    .uc-hero .uc-eyebrow .dot { background: var(--primary); }
+    .uc-hero .uc-illustration .ring1 { background: rgba(184, 214, 77, 0.18); }
+    .uc-hero .uc-illustration .ring2 { background: rgba(184, 214, 77, 0.28); }
+  </style>
+</head>
+<body data-page="home">
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="uc-hero">
+      <div class="uc-inner">
+        <div class="uc-card-box">
+          <div class="top"></div>
+
+          <div class="uc-illustration">
+            <div class="ring1"></div>
+            <div class="ring2"></div>
+            <div class="core">
+              <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 12-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></svg></div>
+            </div>
+          </div>
+
+          <div class="uc-eyebrow"><span class="dot"></span>Under Construction</div>
+          <h2>We're Building Something Great</h2>
+          <p class="uc-desc">This page is being crafted with care. Check back soon — we're putting the final touches on something we can't wait to share with you.</p>
+
+          <div class="uc-countdown" id="ucCountdown"></div>
+
+          <a class="btn btn-primary btn-lg" href="index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Go Home
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/slider.js"></script>
+
+  <!-- Standalone countdown — populates #ucCountdown (30 days from load) -->
+  <script>
+    (function () {
+      "use strict";
+      var cd = document.getElementById("ucCountdown");
+      if (!cd) return;
+      var target = Date.now() + 30 * 24 * 60 * 60 * 1000;
+      function unit(v, l) {
+        return '<div class="uc-unit"><div class="uc-val">' + String(v).padStart(2, "0") +
+               '</div><div class="uc-lab">' + l + "</div></div>";
+      }
+      function tick() {
+        var diff = target - Date.now();
+        if (diff < 0) diff = 0;
+        var d = Math.floor(diff / 86400000);
+        var h = Math.floor((diff % 86400000) / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var s = Math.floor((diff % 60000) / 1000);
+        cd.innerHTML = unit(d, "Days") + unit(h, "Hours") + unit(m, "Mins") + unit(s, "Secs");
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
+</body>
+</html>
