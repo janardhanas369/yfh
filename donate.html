@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Give a Child Their Best Shot at Yes For Hockey!</title>
+  <meta name="description" content="Your donation funds coaching, equipment, and competitive opportunities for government school children. Every gift creates a champion.">
+  <meta name="keywords" content="donate Yes For Hockey, donate YFHA, hockey NGO donation Bengaluru, sponsor child hockey, hockey equipment donation, 80G donation, government school hockey donation">
+  <meta property="og:title" content="Donate | Give a Child Their Best Shot at Yes For Hockey!">
+  <meta property="og:description" content="Your donation funds coaching, equipment, and competitive opportunities for government school children. Every gift creates a champion.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.yesforhockey.in/logo-yfh.png">
+  <link rel="canonical" href="https://www.yesforhockey.in/donate.html">
+  <link rel="icon" href="logo-yfh.png" type="image/png">
+  <link rel="apple-touch-icon" href="logo-yfh.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animation.css">
+</head>
+<body data-page="donate">
+
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- ============== PAGE BANNER ============== -->
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Donate</span>
+        <h1>Every Gift Creates a Champion.</h1>
+        <p class="lead">Behind every confident young athlete is someone who believed in their potential. Your donation gives children from government schools access to professional coaching, equipment, and a pathway to a brighter future.</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <svg class="sep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          <span class="current">Donate</span>
+        </nav>
+      </div>
+      <svg class="curve" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C360,60 720,0 1080,30 C1260,45 1380,30 1440,20 L1440,60 L0,60 Z" fill="#ffffff"/></svg>
+    </section>
+
+    <!-- ============== DONATION SECTION ============== -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="split-2">
+
+          <!-- LEFT: donation form-card -->
+          <div class="form-card reveal" data-donate data-impacts='{"500":"Provides essential hockey equipment for one young player.","1000":"Supports structured coaching for one player for a month.","5000":"Covers travel and registration for a player\u0027s district trial.","25000":"Strengthens a full government school hockey program for a season.","custom":"Your generous contribution directly supports coaching, equipment, and competitive opportunities for young athletes."}'>
+            <div class="fc-head">
+              <h3>Make A Donation</h3>
+              <p>Choose Your Impact</p>
+            </div>
+
+            <div class="amount-grid" style="margin-bottom:1rem">
+              <button type="button" class="amount-btn" data-amt="500">₹500</button>
+              <button type="button" class="amount-btn active" data-amt="1000">₹1,000</button>
+              <button type="button" class="amount-btn" data-amt="5000">₹5,000</button>
+              <button type="button" class="amount-btn" data-amt="25000">₹25,000</button>
+            </div>
+
+            <div class="form-group">
+              <label for="d-custom">Custom Amount</label>
+              <input type="number" min="100" id="d-custom" class="form-control" data-custom-amount placeholder="Enter amount">
+            </div>
+
+            <div class="impact-msg" data-impact-msg style="margin-bottom:1.25rem">
+              <div class="im-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+              <div>
+                <div class="im-lab">Your Impact · ₹1,000</div>
+                <div class="im-txt">Supports structured coaching for one player for a month.</div>
+              </div>
+            </div>
+
+            <form data-validate data-success-msg="A donation of your chosen amount is being processed. A receipt will be emailed to you.">
+              <div class="form-success" style="display:none">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div>
+                  <div class="t">Thank you!</div>
+                  <div class="d">A donation of your chosen amount is being processed. A receipt will be emailed to you.</div>
+                </div>
+              </div>
+
+              <input type="hidden" data-amount name="amount" data-amount="1000">
+              <div class="field-error" data-error-for="amount" style="display:none;margin-bottom:1rem">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Please select or enter an amount (min ₹100)
+              </div>
+
+              <div class="form-group">
+                <label for="d-name">Name</label>
+                <input type="text" id="d-name" class="form-control" name="name" data-required placeholder="Your name">
+                <div class="field-error" data-error-for="name" style="display:none">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Please enter your name.
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="d-email">Email</label>
+                <input type="email" id="d-email" class="form-control" name="email" data-required placeholder="you@example.com">
+                <div class="field-error" data-error-for="email" style="display:none">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="d-phone">Phone <span class="opt">(optional)</span></label>
+                <input type="tel" id="d-phone" class="form-control" name="phone" placeholder="+91 90000 00000">
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg">🏑 Complete Donation
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+
+              <div class="trust-badges">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Secure</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Registered Non-Profit</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 80G Receipt</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 100% to Programs</span>
+              </div>
+            </form>
+          </div>
+
+          <!-- RIGHT: impact guide + QR + bank -->
+          <div class="reveal" data-delay="150">
+            <div class="section-head left">
+              <h3 style="font-size:1.5rem">Impact Guide</h3>
+              <p>What Your Gift Does</p>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.5rem">
+              <div class="impact-guide-row">
+                <div class="amt">₹500</div>
+                <div class="desc">Provides essential hockey equipment for one young player.</div>
+              </div>
+              <div class="impact-guide-row">
+                <div class="amt">₹1,000</div>
+                <div class="desc">Supports structured coaching for one player for a month.</div>
+              </div>
+              <div class="impact-guide-row">
+                <div class="amt">₹5,000</div>
+                <div class="desc">Covers travel and registration for a player's district trial.</div>
+              </div>
+              <div class="impact-guide-row">
+                <div class="amt">₹25,000</div>
+                <div class="desc">Strengthens a full government school hockey program for a season.</div>
+              </div>
+            </div>
+
+            <div class="grid grid-2">
+              <div class="qr-box">
+                <div class="qr-label">Scan &amp; Pay</div>
+                <svg class="bk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="5" height="5"/><rect x="16" y="3" width="5" height="5"/><rect x="3" y="16" width="5" height="5"/><path d="M21 16h-3a2 2 0 0 0-2 2v3M21 21v.01M12 7v1a1 1 0 0 0 1 1h1M12 12h.01M16 16h.01M16 12v.01"/></svg>
+                <div class="qr-placeholder">
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <div class="note">QR Placeholder</div>
+              </div>
+              <div class="bank-box">
+                <div class="bk-label">Bank Transfer</div>
+                <svg class="bk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="12" y1="18" x2="12" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 8 4 8"/></svg>
+                <dl>
+                  <div><dt>Account</dt><dd>[To be inserted]</dd></div>
+                  <div><dt>IFSC</dt><dd>[To be inserted]</dd></div>
+                  <div><dt>Name</dt><dd>YES For Hockey</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== WHY YOUR SUPPORT MATTERS ============== -->
+    <section class="section bg-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why Give</span>
+          <h2>Why Your Support Matters</h2>
+          <p>For many talented children, the dream of playing hockey is limited by access to coaching and equipment, not by ability. Your generosity removes that barrier.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== YOUR DONATION CREATES REAL IMPACT ============== -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Real Impact</span>
+          <h2>Your Donation Creates Real Impact</h2>
+          <p>Every contribution directly fuels the resources, training, and opportunities that turn potential into achievement.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="icon-card reveal" data-delay="0">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
+            <h3>Professional Coaching</h3>
+            <p>Structured training from experienced coaches who mentor every child on and off the field.</p>
+          </div>
+          <div class="icon-card reveal" data-delay="100">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div>
+            <h3>Hockey Equipment</h3>
+            <p>Sticks, balls, shin guards, and shoes distributed free to every child who joins the program.</p>
+          </div>
+          <div class="icon-card reveal" data-delay="200">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <h3>Fitness &amp; Development</h3>
+            <p>Year-round fitness sessions, nutrition guidance, and holistic athletic development.</p>
+          </div>
+          <div class="icon-card reveal" data-delay="0">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 22v-4a2 2 0 0 0-4 0v4"/><path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"/><path d="M18 5v17"/><path d="M4 5v17"/><path d="m12 2 6 3-6 3-6-3z"/></svg></div>
+            <h3>School Hockey Programs</h3>
+            <p>Free, fully managed hockey programs running in government schools across Bengaluru.</p>
+          </div>
+          <div class="icon-card reveal" data-delay="100">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+            <h3>Tournaments &amp; Competitions</h3>
+            <p>Registration, travel, and exposure at district, state, and national-level tournaments.</p>
+          </div>
+          <div class="icon-card reveal" data-delay="200">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <h3>Pathways to Excellence</h3>
+            <p>Clear routes from school grounds to district, state, and national selection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== WAYS TO GIVE ============== -->
+    <section class="section bg-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Flexible Giving</span>
+          <h2>Ways to Give</h2>
+          <p>Choose the giving method that works for you — every option creates lasting impact for young athletes.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="icon-card reveal" data-delay="0">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+            <h3>One-Time Donation</h3>
+            <p>A single gift that immediately funds coaching, equipment, or tournament participation.</p>
+          </div>
+          <div class="icon-card reveal" data-delay="100">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></div>
+            <h3>Monthly Giving</h3>
+            <p>A recurring gift that provides steady, predictable support for coaching all year round.</p>
+          </div>
+          <div class="icon-card reveal" data-delay="200">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg></div>
+            <h3>Corporate Giving</h3>
+            <p>CSR-aligned partnerships with co-branded programs and full impact reporting.</p>
+          </div>
+          <div class="icon-card reveal" data-delay="300">
+            <div class="ic-icon solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div>
+            <h3>In-Kind Contributions</h3>
+            <p>Donate hockey equipment, gear, or professional services directly to the program.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== OUR COMMITMENT TO TRANSPARENCY ============== -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Promise</span>
+          <h2>Our Commitment to Transparency</h2>
+          <p>We hold ourselves accountable to every donor, every child, and every partner we serve.</p>
+        </div>
+        <ul class="check-list reveal" data-delay="100" style="max-width:680px;margin:0 auto">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Responsible fund utilisation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Transparent financial practices</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Measurable community impact</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Regular program updates</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Donor acknowledgment</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Annual audited financial statements</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============== OTHER WAYS TO SUPPORT CTA ============== -->
+    <section class="section bg-soft">
+      <div class="container">
+        <div class="cta-dark reveal-zoom">
+          <div class="container">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div>
+            <h2>Other Ways to Support</h2>
+            <p>Not ready to donate? You can still help by volunteering, partnering through CSR, sponsoring a school, donating equipment, or sharing our mission.</p>
+            <a class="btn btn-primary btn-lg" href="get-involved.html">Get Involved
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/slider.js"></script>
+</body>
+</html>
