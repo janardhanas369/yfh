@@ -89,17 +89,17 @@ ol {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
   color: var(--text-dark);
 }
 
-h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; }
-h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; }
-h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
-h4 { font-size: 1.05rem; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.1; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.15; }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); font-weight: 700; }
+h4 { font-size: 1.05rem; font-weight: 600; }
 
-p { color: var(--text); }
+p { color: var(--text); line-height: 1.7; }
 
 /* Global SVG default — prevent unsized SVGs from rendering at 24px.
    Individual components override with specific sizes above. */
@@ -2129,3 +2129,135 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 
 /* Empty state */
 .empty-state { text-align: center; padding: 3rem 1rem; color: rgba(94, 94, 95, 0.6); }
+
+/* ============================================================
+   ELEGANCE REFINEMENTS
+   Subtle typography, spacing, and micro-interaction polish.
+   ============================================================ */
+
+/* Refined section rhythm */
+.section { padding: 5.5rem 0; }
+.section-sm { padding: 4rem 0; }
+
+/* Tighter eyebrow styling */
+.eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  margin-bottom: 1rem;
+}
+
+/* Refined section heading paragraph */
+.section-head p {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: rgba(94, 94, 95, 0.75);
+}
+
+/* Smoother card hover transitions */
+.feature-card,
+.icon-card,
+.team-card,
+.testimonial-card,
+.partner-logo-card,
+.partner-tile,
+.gov-tile {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              background 0.3s ease,
+              border-color 0.3s ease;
+}
+
+/* Refined button hover */
+.btn {
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Subtle heading color refinement */
+.section-head h2 {
+  margin-bottom: 0.85rem;
+}
+
+/* Refined hero typography */
+.hero h1 {
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+.hero .hero-sub {
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+}
+
+/* Refined page banner */
+.page-banner h1 {
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.page-banner .lead {
+  line-height: 1.65;
+}
+
+/* Smoother reveal */
+.reveal,
+.reveal-zoom,
+.reveal-left {
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Refined stat numbers */
+.stat-item .num,
+.stat-box .num {
+  letter-spacing: -0.03em;
+}
+
+/* Subtle link underline animation */
+.q-link,
+.read-more,
+.ic-cta,
+.qa-cta {
+  position: relative;
+}
+.q-link::after,
+.read-more::after,
+.ic-cta::after,
+.qa-cta::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+.q-link:hover::after,
+.read-more:hover::after,
+.ic-cta:hover::after,
+.qa-cta:hover::after {
+  width: 100%;
+}
+
+/* Refined form inputs */
+.form-control {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* Refined footer newsletter */
+.footer-newsletter h3 {
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+/* Subtle divider in footer */
+.footer-bottom {
+  padding: 1.5rem 0;
+}
+
+/* Refined focus states for accessibility */
+.btn:focus-visible,
+.btn-donate:focus-visible,
+.nav-link:focus-visible,
+.form-control:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

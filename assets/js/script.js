@@ -82,14 +82,13 @@
     { id: "about", label: "About", href: BASE + "about/about.html", dropdown: [
       { label: "Our Story", href: BASE + "about/our-story.html" },
       { label: "Our Team", href: BASE + "about/our-team.html" },
-      { label: "Schools", href: BASE + "schools/schools.html" },
+      { label: "Schools We Serve", href: BASE + "about/schools.html" },
       { label: "Our Compliance", href: BASE + "about/compliance.html" },
     ]},
     { id: "programs", label: "Programs", href: BASE + "programs/programs.html" },
     { id: "impact", label: "Impact", href: BASE + "impact.html" },
-    { id: "get-involved", label: "Get Involved", href: BASE + "get-involved.html" },
-    { id: "gallery", label: "Gallery", href: BASE + "gallery.html" },
     { id: "partners", label: "Our Partners", href: BASE + "our-partners.html" },
+    { id: "get-involved", label: "Get Involved", href: BASE + "get-involved.html" },
     { id: "contact", label: "Contact", href: BASE + "contact.html" },
   ];
 
@@ -115,8 +114,8 @@
       '<header class="site-header" id="siteHeader">' +
         '<div class="container header-inner">' +
           '<a class="header-logo" href="' + BASE + '/index.html">' +
-            '<span class="logo-box"><img src="' + BASE + 'logo-yfh.png" alt="YES For Hockey logo"></span>' +
-            '<span class="logo-text"><span class="name">YES FOR HOCKEY</span><span class="tag">Empowering Champions</span></span>' +
+            '<span class="logo-box"><img src="' + BASE + 'logo-yfh.png" alt="Yes For Hockey! Association logo"></span>' +
+            '<span class="logo-text"><span class="name">YES FOR HOCKEY!</span><span class="tag">Association (YFHA)</span></span>' +
           "</a>" +
           '<nav class="main-nav">' + navItems + "</nav>" +
           '<div class="header-actions">' +
@@ -143,7 +142,7 @@
         '<div class="overlay" data-close-menu></div>' +
         '<div class="panel">' +
           '<div class="panel-head">' +
-            '<div class="logo-row"><span class="lb"><img src="' + BASE + 'logo-yfh.png" alt=""></span><span class="name">YES FOR HOCKEY</span></div>' +
+            '<div class="logo-row"><span class="lb"><img src="' + BASE + 'logo-yfh.png" alt=""></span><span class="name">YES FOR HOCKEY!</span></div>' +
             '<button class="close" id="menuClose" aria-label="Close menu">' + icon("close") + "</button>" +
           "</div>" +
           '<div class="panel-body">' + mLinks + "</div>" +
@@ -169,21 +168,21 @@
       { l: "About Us", h: BASE + "about/about.html" },
       { l: "Our Story", h: BASE + "about/our-story.html" },
       { l: "Our Team", h: BASE + "about/our-team.html" },
-      { l: "Schools", h: BASE + "schools/schools.html" },
+      { l: "Schools We Serve", h: BASE + "about/schools.html" },
       { l: "Impact", h: BASE + "impact.html" },
     ].map(function (x) { return '<li><a href="' + x.h + '">' + x.l + "</a></li>"; }).join("");
 
     var progLinks = [
-      { l: "Academic Mentorship", h: BASE + "programs/program-academic.html" },
       { l: "Grassroots Hockey Training", h: BASE + "programs/program-hockey.html" },
-      { l: "Elite Talent Pathway", h: BASE + "programs/program-elite.html" },
+      { l: "Life Skills & Personal Development", h: BASE + "programs/program-development.html" },
+      { l: "Team of Excellence & Talent Pathway", h: BASE + "programs/program-elite.html" },
     ].map(function (x) { return '<li><a href="' + x.h + '">' + x.l + "</a></li>"; }).join("");
 
     var giLinks = [
-      { l: "Donate", h: BASE + "donate.html" },
       { l: "Volunteer", h: BASE + "get-involved.html" },
+      { l: "Donate", h: BASE + "donate.html" },
       { l: "Partner With Us", h: BASE + "our-partners.html" },
-      { l: "Contact", h: BASE + "contact.html" },
+      { l: "Register Your School", h: BASE + "contact.html" },
     ].map(function (x) { return '<li><a href="' + x.h + '">' + x.l + "</a></li>"; }).join("");
 
     // sitemap
@@ -199,7 +198,7 @@
         '<div class="top-accent"></div>' +
         '<div class="footer-newsletter">' +
           '<div class="container fn-row">' +
-            "<div><h3>Stay in the game.</h3><p>Get stories of impact, program updates, and ways to help — straight to your inbox.</p></div>" +
+            "<div><h3>Stay Connected With the Movement</h3><p>Get program updates, tournament news, and player stories in your inbox.</p></div>" +
             '<form id="newsletterForm">' +
               '<input type="email" placeholder="Enter your email" required>' +
               "<button type=\"submit\">Subscribe " + icon("send") + "</button>" +
@@ -210,10 +209,10 @@
           '<div class="container fgrid">' +
             '<div class="footer-brand">' +
               '<a class="f-logo" href="' + BASE + '/index.html">' +
-                '<span class="lb"><img src="' + BASE + 'logo-yfh.png" alt="YES For Hockey"></span>' +
-                '<span class="lt"><span class="name">YES FOR HOCKEY</span><span class="tag">Empowering Champions</span></span>' +
+                '<span class="lb"><img src="' + BASE + 'logo-yfh.png" alt="Yes For Hockey! Association"></span>' +
+                '<span class="lt"><span class="name">YES FOR HOCKEY!</span><span class="tag">Association (YFHA)</span></span>' +
               "</a>" +
-              "<p>An NGO supporting underprivileged children in government schools through free academic tutoring and hockey coaching — all the way to the national stage.</p>" +
+              "<p>Empowering young athletes through opportunity, discipline, and excellence - building the future of Indian hockey from the grassroots, one government school at a time.</p>" +
               '<div class="f-social">' + socials + "</div>" +
             "</div>" +
             '<div class="footer-col"><h4>Organisation</h4><ul>' + orgLinks + "</ul></div>" +
@@ -221,9 +220,9 @@
             '<div class="footer-col"><h4>Get Involved</h4><ul>' + giLinks +
               '<li><button id="sitemapBtn" type="button">Site Map</button></li></ul>' +
               '<div class="f-contact-mini">' +
-                '<div>' + icon("mail") + " hello@yesforhockey.in</div>" +
-                '<div>' + icon("mapPin") + " India — Nationwide</div>" +
-                '<div>' + icon("clock") + " Response in 2 days</div>" +
+                '<div>' + icon("mail") + " info@yesforhockey.in</div>" +
+                '<div>' + icon("phone") + " +91 XXXXX XXXXX</div>" +
+                '<div>' + icon("mapPin") + " Bengaluru, Karnataka, India</div>" +
               "</div>" +
             "</div>" +
           "</div>" +
@@ -233,8 +232,8 @@
           "</div>" +
         "</div>" +
         '<div class="container footer-bottom">' +
-          "<p>© " + new Date().getFullYear() + ' YES For Hockey. All rights reserved.</p>' +
-          '<p class="made">Made with <span class="heart">♥</span> for children who deserve a shot at glory.</p>' +
+          "<p>© " + new Date().getFullYear() + ' Yes For Hockey! Association (YFHA). All rights reserved.</p>' +
+          '<p class="made">Empowering Every Child. Inspiring Every Dream. <span class="heart">♥</span></p>' +
         "</div>" +
       "</footer>" +
       '<button class="back-to-top" id="backToTop" aria-label="Back to top">' + icon("arrowUp") + "</button>";
